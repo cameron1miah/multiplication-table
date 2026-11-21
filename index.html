@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplication Table</title>
+<style>
+body{font-family:Arial;background:#eff6ff;padding:25px}
+main{max-width:500px;margin:auto;background:white;padding:30px;border-radius:15px;text-align:center}
+input{width:85%;padding:13px;margin:10px;border:1px solid #93c5fd;border-radius:8px}
+button{background:#2563eb;color:white;padding:13px 20px;border:0;border-radius:8px;cursor:pointer}
+.row{background:#dbeafe;padding:12px;margin:8px 0;border-radius:6px;font-size:18px}
+</style>
+</head>
+<body>
+<main>
+<h1>Multiplication Table</h1>
+<p>Learn multiplication with an interactive tool.</p>
+<input id="number" type="number" value="5" placeholder="Enter a number">
+<button onclick="generate()">Generate Table</button>
+<div id="table"></div>
+</main>
+<script>
+function generate(){
+ const input=document.getElementById("number");
+ const number=Number(input.value);
+ const table=document.getElementById("table");
+ table.innerHTML="";
+ if(input.value===""||!Number.isSafeInteger(number)||Math.abs(number)>1000000){
+  table.textContent="Please enter a valid integer.";
+  return;
+ }
+ for(let i=1;i<=12;i++){
+  const row=document.createElement("div");
+  row.className="row";
+  row.textContent=number+" × "+i+" = "+number*i;
+  table.appendChild(row);
+ }
+}
+generate();
+</script>
+</body>
+</html>
