@@ -1,22 +1,22 @@
-# Multiplication Table
+## Multiplication Table Guide
 
-An educational multiplication table generator.
+This application generates multiplication
+tables for selected numbers.
 
-## Features
+### Features
 
-- Custom integer input
-- Multiplication results from 1 to 12
+- Number input
+- Multiplication results
+- Organized table display
+- Input validation
 
-## How to Use
+### How to Use
 
-Enter a number and generate its multiplication table.
+1. Enter a positive integer.
+2. Generate its multiplication table.
+3. Review the calculated results.
 
-## Technologies
+### Educational Purpose
 
-- HTML
-- CSS
-- JavaScript
-
-## Running Locally
-
-Open `index.html` in a modern web browser.
+This tool helps students practice
+basic multiplication operations.
