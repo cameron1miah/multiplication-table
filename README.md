@@ -20,3 +20,12 @@ tables for selected numbers.
 
 This tool helps students practice
 basic multiplication operations.
+## Manual Testing Checklist
+
+- [ ] Generate the multiplication table for five.
+- [ ] Check the first and last displayed rows.
+- [ ] Try zero and negative integers if supported.
+
+### Test Notes
+
+Record the observed result and any reproducible issue after running the tests.
